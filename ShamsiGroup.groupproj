@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7a68472a-429a-48d7-973d-ee412d2eb894}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="ClockDriver.dproj" />
+    <Projects Include="Shamsi_XP.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Shamsi_XP">
+    <MSBuild Projects="Shamsi_XP.dproj" Targets="" />
+  </Target>
+  <Target Name="Shamsi_XP:Clean">
+    <MSBuild Projects="Shamsi_XP.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Shamsi_XP:Make">
+    <MSBuild Projects="Shamsi_XP.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ClockDriver">
+    <MSBuild Projects="ClockDriver.dproj" Targets="" />
+  </Target>
+  <Target Name="ClockDriver:Clean">
+    <MSBuild Projects="ClockDriver.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ClockDriver:Make">
+    <MSBuild Projects="ClockDriver.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Shamsi_XP;ClockDriver" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Shamsi_XP:Clean;ClockDriver:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Shamsi_XP:Make;ClockDriver:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

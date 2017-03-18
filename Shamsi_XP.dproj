@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{a9f46f8f-7768-4f0a-90d3-ea79cf2a80b3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Shamsi_XP.exe</DCC_DependencyCheckOutputName>
+    <MainSource>Shamsi_XP.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_Description>Shamsi XP</DCC_Description>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">0</VersionInfo><VersionInfo Name="MinorVer">2</VersionInfo><VersionInfo Name="Release">5</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">http://www.mshams.ir</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Shamsi date for WinXP</VersionInfoKeys><VersionInfoKeys Name="FileVersion">0.2.5.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Copyright(C) 2009 Mohammad Shams Javi</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks">GNU Public License (GPL3)</VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">Shamsi_XP.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">Shamsi XP 0.25</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">0.2.5.0</VersionInfoKeys><VersionInfoKeys Name="Comments">Coded by Mohammad Shams Javi. Source code is available in www.mshams.ir</VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="D:\Documents and Settings\M_Admin\My Documents\RAD Studio\5.0\Bpl\Delphi7HelpForBdsExpert.bpl">File D:\Documents and Settings\M_Admin\My Documents\RAD Studio\5.0\Bpl\Delphi7HelpForBdsExpert.bpl not found</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">Shamsi_XP.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Shamsi_XP.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="ShamsiDate.pas" />
+    <DCCReference Include="XPShamsi.pas">
+      <Form>XpShamsiMain</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>
