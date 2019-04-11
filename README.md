@@ -24,7 +24,6 @@ along with Shamsi XP; if not, see <http://www.gnu.org/copyleft/lesser.html>.
 
 Contact Details:
  Any comments? contact me please.
- E-mail:  M.Shams.J@gmail.com 
  Website: http://www.mshams.ir
  Copyright(C) 2009 Mohammad Shams Javi
 
